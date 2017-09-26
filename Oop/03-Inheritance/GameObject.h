@@ -11,3 +11,16 @@ public:
 	virtual void update();
 	virtual void draw();
 };
+
+class Player : public GameObject
+{
+public:
+	float x;
+	float y;
+
+	virtual void update() override;
+	virtual void draw() override;
+
+protected:
+	int playerNumber;
+};

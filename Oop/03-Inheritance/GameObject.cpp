@@ -1,8 +1,9 @@
 #include "GameObject.h"
+#include <iostream>
 
 void GameObject::update()
 {
-
+	std::cout << "I am a GameObject." << std::endl;
 }
 
 void GameObject::draw()
@@ -10,22 +11,12 @@ void GameObject::draw()
 
 }
 
-class Player : public GameObject
+void Player::update()
 {
-public:
-	float x;
-	float y;
-
-	virtual void update() override;
-	virtual void draw() override;
-};
-
-void Player::draw()
-{
-
+	std::cout << "I am a child of GameObject." << std::endl;
 }
 
-void Player::update()
+void Player::draw()
 {
 
 }
