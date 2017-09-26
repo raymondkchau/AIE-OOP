@@ -24,3 +24,15 @@ public:
 protected:
 	int playerNumber;
 };
+
+class BaseParticle : public GameObject
+{
+public:
+	float posX;
+	float posY;
+	float speedX;
+	float speedY;
+
+	virtual void update() override;
+	virtual void draw() override;
+};
